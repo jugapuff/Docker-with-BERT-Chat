@@ -11,7 +11,6 @@ class YourModel(BaseModel):
 
     def send(self, input):
         result = self.predictor.predict(input["query"])
-        output = {"sentence": result.replace("철수", "ALICE")}
         return output
 
 

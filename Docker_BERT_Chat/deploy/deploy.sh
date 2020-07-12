@@ -9,7 +9,7 @@ cd ./deploy
 
 docker stop kor_scenario_container
 docker rm kor_scenario_container
-docker build --network host -t kor_scenario_image .
+docker build -t kor_scenario_image .
 docker run -it --gpus all -p 40007:50051 --name kor_scenario_container kor_scenario_image
 
 rm -rf ./ceslea.zip
