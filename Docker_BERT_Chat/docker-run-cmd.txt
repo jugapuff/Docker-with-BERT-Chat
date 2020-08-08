@@ -1,0 +1,2 @@
+docker container run -p 80:80 -d --gpus device=0 --name first-chat_container  first-chat
+docker image build . -t first-chat
